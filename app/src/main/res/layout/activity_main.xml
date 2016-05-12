@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40dp"
+        android:layout_marginBottom="@dimen/title_marginBottom"
+        android:textColor="#d66a8f" />
+
+    <!--<DatePicker-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/datePicker"-->
+        <!--android:layout_gravity="center_horizontal" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="day"-->
+        <!--android:textColor="#d66a8f"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"/>-->
+
+    <!--タイトル-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#d66a8f"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_title_etx"
+        android:background="#d66a8f"
+        android:layout_marginBottom="@dimen/title_marginBottom"
+        android:textColor="#ffffff" />
+
+    <!--コメント-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_comment"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#d66a8f"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:id="@+id/main_comment_etx"
+        android:layout_marginBottom="@dimen/title_marginBottom"
+        android:background="#d66a8f"
+        android:textColor="#ffffff"
+        android:layout_weight="0.6"
+        android:clickable="false"
+        android:gravity="top|left"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="phone number"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#d66a8f"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:background="#d66a8f"
+        android:id="@+id/main_phone_etx"
+        android:layout_marginBottom="@dimen/title_marginBottom"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mail adress"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#d66a8f"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:background="#d66a8f"
+        android:id="@+id/main_mail_etx"
+        android:layout_marginBottom="@dimen/title_marginBottom"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <!--保存ボタン-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_save"
+            android:id="@+id/main_save_btn"
+            android:background="#9de3ea"
+            android:textColor="#ffffff"
+            android:layout_margin="@dimen/margin_Bottom"
+            android:layout_gravity="center_horizontal"/>
+
+        <!--削除ボタン-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_delete"
+            android:id="@+id/main_delete_btn"
+            android:background="#9de3ea"
+            android:textColor="#ffffff"
+            android:layout_margin="@dimen/margin_Bottom"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</LinearLayout>

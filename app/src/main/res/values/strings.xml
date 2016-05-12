@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MemoApp</string>
+
+    <string name="main_name">MEMO</string>
+
+    <string name="main_title">title</string>
+    <string name="main_comment">comment</string>
+    <string name="main_save">save</string>
+    <string name="main_delete">delete</string>
+
+</resources>
